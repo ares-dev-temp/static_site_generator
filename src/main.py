@@ -13,7 +13,7 @@ def main():
         base_path = sys.argv[0]
     
 
-    #copy_static( "static", "public" )
+    copy_static( "static", "docs" )
     #generate_page( "content/index.md", "template.html", "public/index.html" )
     #generate_page_recursive( "content", "template.html", "public" )
 
