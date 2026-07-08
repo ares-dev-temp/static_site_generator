@@ -1,1 +1,1 @@
-python3 src/main.py "/ares-dev-temp/"
+python3 src/main.py "/static-site-generator/"
