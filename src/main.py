@@ -17,7 +17,9 @@ def main():
     #generate_page( "content/index.md", "template.html", "public/index.html" )
     #generate_page_recursive( "content", "template.html", "public" )
 
-    my_doc = "/https://github.com/ares-dev-temp/doc/"
+    #my_doc = "/https://github.com/ares-dev-temp/doc/"
+
+    base_path = "/https://github.com/" + base_path
 
     generate_page_recursive( "content", "template.html", "docs", base_path )
 
