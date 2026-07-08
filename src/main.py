@@ -10,7 +10,9 @@ def main():
     base_path = "/"
 
     if len(sys.argv) > 0:
-        base_path = sys.argv[0]
+        base_path = sys.argv[1]
+
+    print( "args ", sys.argv )
     
 
     copy_static( "static", "docs" )
@@ -19,8 +21,8 @@ def main():
 
     #my_doc = "/https://github.com/ares-dev-temp/doc/"
 
-    base_path = "/https://github.com/" + base_path
+    #base_path = "/https://github.com/" + base_path
 
-    generate_page_recursive( "content", "template.html", "docs", base_path )
+    generate_page_recursive( base_path + "content", base_path + "template.html", base_path + "docs", base_path )
 
 main()
