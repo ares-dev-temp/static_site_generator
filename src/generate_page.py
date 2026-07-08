@@ -39,8 +39,8 @@ def generate_page( from_path, template_path, dest_path, base_path ):
     raw_html = html.replace( "{{ Title }}", title )
     raw_html = raw_html.replace( "{{ Content }}", raw_html_markdown )
 
-    raw_html = raw_html.replace( 'href="/"', f'href="/{base_path}"' )
-    raw_html = raw_html.replace( 'src="/"', f'src="/{base_path}"' )
+    raw_html = raw_html.replace( 'href="/', f'href="{base_path}' )
+    raw_html = raw_html.replace( 'src="/', f'src="{base_path}' )
 
     new_file = open( dest_path, "w" )
     new_file.write( raw_html )
